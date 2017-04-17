@@ -22,7 +22,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: green;
+    background-color: limegreen;
     width: 32%;
     height: 100%;
     border-radius: 100%;	
@@ -54,17 +54,39 @@ html {
 .tituloBox {
     font-family: "Ubuntu";
     font-weight: bold;
-    margin-top: 3%;
-    line-height: 2;
+    margin-top: 4%;
+    margin-bottom: 4%;
     text-align: center;
+    color: darkslateblue;
 }
 
-.valores {    
+.indiceValores {    
     font-family: "Ubuntu";
     font-weight: bold;
-    line-height: 1.5;
-    margin-left: 5%;
+    line-height: 140%;
+    margin-left: 4%;
+    color: darkslateblue;
 }
+
+.valoresContas, .valoresMesAnterior, .valoresGastei, .valoresGanhei {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    line-height: 140%;
+    margin-left: 40%;
+}
+
+.valoresGanhei {
+    color: limegreen;
+}
+
+.valoresGastei {
+    color: red;
+}
+
+.valoresMesAnterior {
+    color: grey;
+}
+
 
 .fundoBotao {
     display: flex;
@@ -80,16 +102,14 @@ button {
     font-weight: bold;
     font-size: 200%;
     color: white;
-    background-color: green;
+    background-color: limegreen;
     border-radius: 100%;
     width: 20%;
     height: 100%;
     border: 3px solid white;
 }
 
-
-/*Legenda ordenar
-.main div.primeiroDiv {-webkit-order:2;}
-.main div.segundoDiv {-webkit-order:3;}
-.main div.terceiroDiv {-webkit-order:1;}
-*/
+.linha {
+    display: flex;
+    flex-direction: row;
+}
