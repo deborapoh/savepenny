@@ -1,9 +1,10 @@
 <html>    
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>Financeiro</title>
         <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="formatacao.css">
+        <link rel="stylesheet" type="text/css" href="format.css">
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     </head>
@@ -12,38 +13,33 @@
             <h1>SavePenny</h1>
         </header>       
         <main>
-
-            <div class="fundoSaldoTotal">
-                <div class="circuloSaldoAtual">
-                    <div class="saldoAtual">R$ 0,00</div>
-                </div>
+            <div class='fundoCirculos'>
+                <div class='centro'>
+                    <div class='circulo saldoAtual'>
+                        <div class='saldo'>R$ 0,00</div>
+                    </div>
+                    <div class='circulo saldoAnterior'>
+                        <div class='saldo'>R$ 0,00</div>
+                    </div>
+                </div>   
             </div>
             
-            <div class="fundoValores">
-                <div class="boxValores">
-                    <div class="tituloBox">Mês Atual</div>
-                    <div class="linha"><div class="indiceValores">Mês Anterior</div><div class="valoresMesAnterior">R$ 0,00</div></div>
-                    <div class="linha"><div class="indiceValores">Gastei</div><div class="valoresGastei">R$ 0,00</div></div>
-                    <div class="linha"><div class="indiceValores">Ganhei</div><div class="valoresGanhei">R$ 0,00</div></div>          
-                </div>
+            <div class='caixaBranca'>
+                <div class='tituloValores'>Mês Atual</div>
+                <div class='linha'><div class='indiceValores'>Gastei</div><div class='gastei'>R$ 0,00</div></div>
+                <div class='linha'><div class='indiceValores'>Ganhei</div><div class='ganhei'>R$ 0,00</div></div>  
             </div>
 
-            <div class="fundoValores">
-                <div class="boxValores">
-                    <div class="tituloBox">Contas</div>
-                    <div class="linha"><div class="indiceValores">Dinheiro</div><div class="valoresContas">R$ 0,00</div></div>
-                    <div class="linha"><div class="indiceValores">Poupança</div><div class="valoresContas">R$ 0,00</div></div>
-                    <div class="linha"><div class="indiceValores">Conta Corrente</div><div class="valoresContas">R$ 0,00</div></div>          
-                </div>
+            <div class='caixaBranca'>
+                <div class='tituloValores'>Contas</div>
+                <div class='linha'><div class='indiceValores'>Poupança</div><div>R$ 0,00</div></div>
+                <div class='linha'><div class='indiceValores'>Conta Corrente</div><div>R$ 0,00</div></div>          
             </div>
 
-            <div class="fundoBotao">
-                <button id="addButton">+</button>
-            </div>
-            
+            <button id="botaoAdicionar">+</button>
 
         </main>
-        <script src="funcoes.js"></script>
+        <script src="adicionarValores.js"></script>
     </body>
 </html>
 
